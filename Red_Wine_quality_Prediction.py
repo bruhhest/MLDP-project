@@ -13,7 +13,6 @@ model = joblib.load('model.pkl')
 def home():
     return render_template('index.html')
 
-@app.route('/predict', methods=['POST'])
 def predict():
     form_data = [float(x) for x in request.form.values()]
     features = [np.array(form_data)]
