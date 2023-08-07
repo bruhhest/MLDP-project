@@ -5,8 +5,6 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 
-# Create the Flask app and load the trained model
-app = Flask(__name__)
 model = joblib.load('model.pkl')
 
 # Define the '/' root route to display the content from index.html
