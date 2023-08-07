@@ -1,6 +1,9 @@
 # Import the libraies
 import numpy as np
-from flask import Flask, request, render_template
+import streamlit as st
+import pandas as pd
+from sklearn import datasets
+from sklearn.ensemble import RandomForestClassifier
 import joblib
 
 # Create the Flask app and load the trained model
