@@ -18,8 +18,8 @@ def user_input_features():
     total_sulfur_dioxide = st.sidebar.slider('total_sulfur_dioxide', 40.0, 50.0, 60.0)
     density = st.sidebar.slider('density', 0.8, 0.9, 1.0)
     pH = st.sidebar.slider('pH', 2.0, 3.0, 4.0)
-    citric_acid = st.sidebar.slider('sulphates', 0.5, 0.6, 0.7)
-    citric_acid = st.sidebar.slider('alcohol', 9.0, 9.5, 10.0)
+    sulphates = st.sidebar.slider('sulphates', 0.5, 0.6, 0.7)
+    alcohol = st.sidebar.slider('alcohol', 9.0, 9.5, 10.0)
     data = {'fixed_acidity': fixed_acidity,
             'volatile_acidity': volatile_acidity,
             'residual_sugar': residual_sugar,
