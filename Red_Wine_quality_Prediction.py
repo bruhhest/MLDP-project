@@ -39,7 +39,7 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-Red_Wine_Quality = datasets.load_Red_Wine_Quality()
+Red_Wine_Quality = datasets.Red_Wine_Quality()
 X = Red_Wine_Quality.data
 Y = Red_Wine_Quality.target
 
