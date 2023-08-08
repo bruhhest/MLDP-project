@@ -25,13 +25,13 @@ def user_input_features():
     data = {'fixed_acidity': fixed_acidity,
             'volatile_acidity': volatile_acidity,
             'residual_sugar': residual_sugar,
-            'citric_acid': citric_acid
-            'chlorides': chlorides
-            'free_sulfur_dioxide': free_sulfur_dioxide
-            'total_sulfur_dioxide': total_sulfur_dioxide
-            'density': density
-            'pH': pH
-            'sulphates': sulphates
+            'citric_acid': citric_acid,
+            'chlorides': chlorides,
+            'free_sulfur_dioxide': free_sulfur_dioxide,
+            'total_sulfur_dioxide': total_sulfur_dioxide,
+            'density': density,
+            'pH': pH,
+            'sulphates': sulphates,
             'alcohol': alcohol }
     features = pd.DataFrame(data, index=[0])
     return features
