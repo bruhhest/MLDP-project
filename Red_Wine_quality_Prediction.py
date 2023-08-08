@@ -34,10 +34,10 @@ def user_input_features():
     features = pd.DataFrame(data, index=[0])
     return features
 
-dataset = user_input_features()
+df = user_input_features()
 
 st.subheader('User Input parameters')
-st.write(dataset)
+st.write(df)
 
 Red_Wine_Quality = datasets.load_Red_Wine_Quality()
 X = Red_Wine_Quality.data
@@ -46,8 +46,8 @@ Y = Red_Wine_Quality.target
 clf = RandomForestClassifier()
 clf.fit(X, Y)
 
-prediction = clf.predict(dataset)
-prediction_proba = clf.predict_proba(dataset)
+prediction = clf.predict(df)
+prediction_proba = clf.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
 st.write(Red_Wine_Quality.target_names)
