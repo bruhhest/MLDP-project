@@ -34,10 +34,10 @@ def user_input_features():
     features = pd.DataFrame(data, index=[0])
     return features
 
-df = user_input_features()
+dataset = user_input_features()
 
 st.subheader('User Input parameters')
-st.write(df)
+st.write(dataset)
 
 Red_Wine_Quality = datasets.load_Red_Wine_Quality()
 X = Red_Wine_Quality.data
